@@ -52,13 +52,13 @@ repositories {
         url "http://dvs1.progwml6.com/files/maven"
     }
 	maven {
-		url "http://tehnut.info/maven"
+		url "https://maven.tehnut.info"
 	}
 }
 
 dependencies {
 	deobfCompile "mezz.jei:jei_1.12.1:+"
-	deobfCompile "mcp.mobius.waila:Hwyla:+"
+	deobfCompile "mcp.mobius.waila:Hwyla:1.8+"
 }
 
 sourceSets {
