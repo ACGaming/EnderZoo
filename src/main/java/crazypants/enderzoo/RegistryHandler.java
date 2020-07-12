@@ -61,8 +61,8 @@ public class RegistryHandler {
 	    	EntityEntry entry = new EntityEntry(mob.getClz(), mob.getName());
 	    	ResourceLocation name = new ResourceLocation(EnderZoo.MODID, mob.getName());
 	    	entry.setRegistryName(name);
+			e.getRegistry().register(entry);
 	    	entry.setEgg(new EntityEggInfo(name, mob.getEggBackgroundColor(), mob.getEggForegroundColor()));
-	    	e.getRegistry().register(entry);
 	        registerEntity(mob);
 	      }
 	}
